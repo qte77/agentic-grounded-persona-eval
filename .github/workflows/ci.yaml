@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - run: uv run pytest -q
+      - name: verify sourcing on any tracked findings files
+        run: |
+          shopt -s nullglob
+          files=(findings/*-findings.md)
+          if [ ${#files[@]} -gt 0 ]; then
+            uv run python scripts/verify_sourcing.py "${files[@]}"
+          else
+            echo "no findings/*-findings.md tracked here, skipping"
+          fi
