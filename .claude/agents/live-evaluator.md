@@ -51,7 +51,9 @@ same failure.
 - **What you're not sure about** — per the method's honesty discipline, and inheriting any
   weak-grounding flag already on this persona's card from Phase 2
 
-Append this to `findings/<product-slug>-findings.md` §Verdicts, one subsection per persona. If this
-is the last persona to complete, also write a brief §Cross-persona synthesis: what do the verdicts
-converge on, independently, from their different angles? That convergence — not any single verdict —
-is usually the method's highest-leverage output.
+**Report this back to whoever launched you — do not edit `findings/<product-slug>-findings.md`
+yourself.** When multiple personas run in parallel, each instance writing directly to the same file
+risks clobbering another's edit, and no instance can reliably know it's "the last one" to finish. The
+orchestrator collects every instance's verdict and writes §Verdicts (plus the closing
+§Cross-persona synthesis) in a single pass once all instances have reported — see `AGENTS.md`'s
+"Single writer for §Verdicts."
