@@ -11,3 +11,6 @@ findings/*-findings.md
 # convention for local reference clones). Deliberately generic — never name a specific
 # product/repo here, since this file is public and tracked.
 vendor/
+
+# Agent session memory: local only
+/MEMORY.md
