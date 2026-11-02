@@ -2,4 +2,12 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-config/target.md
+config/target*.md
+!config/target.example.md
+findings/*-findings.md
+
+# Local checkouts of products under evaluation, if ever cross-referenced during a run (mirrors
+# config/target.md's own "checked out alongside" pattern, and polyfetch-scrape's own vendor/
+# convention for local reference clones). Deliberately generic — never name a specific
+# product/repo here, since this file is public and tracked.
+vendor/
