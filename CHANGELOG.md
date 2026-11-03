@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `examples/groundwork/`: a worked run of the full method against a public product.
+
+### Changed
+
+- `.gitignore` keeps every product-specific file local: `config/target*.md` (except
+  `config/target.example.md`), `findings/*-findings.md`, `vendor/` and the agent `MEMORY.md`.
+
 ## [0.1.0] - 2026-08-29
 
 ### Added
