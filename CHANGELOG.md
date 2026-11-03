@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- CI pins its actions by commit SHA with a read-only token (#3), and runs the sourcing check on
+  `examples/**/findings.md` too (#5).
 - `.gitignore` keeps every product-specific file local: `config/target*.md` (except
   `config/target.example.md`), `findings/*-findings.md`, `vendor/` and the agent `MEMORY.md`.
 
