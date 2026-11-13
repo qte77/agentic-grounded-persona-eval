@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- CodeQL workflow (`.github/workflows/codeql.yaml`) scanning `python`, `actions` on every
+  push, weekly and on demand; actions pinned to full commit SHAs.
 - `examples/groundwork/`: a worked run of the full method against a public product.
 
 ### Changed
