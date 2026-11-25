@@ -15,6 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- `live-evaluator` reads a per-persona brief written by the orchestrator, never the findings file, so a
+  Phase 3 re-run can't see earlier verdicts (#1).
 - Claude Code `.claude/settings.json` sets `BASH_MAX_OUTPUT_LENGTH` to `15000` and
   `CLAUDE_AUTOCOMPACT_PCT_OVERRIDE` to `50` ([docs](https://code.claude.com/docs/en/env-vars))
 - CI pins its actions by commit SHA with a read-only token (#3), and runs the sourcing check on
