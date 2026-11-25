@@ -15,7 +15,11 @@ Phase 3: live-evaluator × N      → reports back to you   (needs §Personas; o
 Strict order between phases — a phase never starts before the one before it has real output, per
 each subagent's own precondition check. **Within Phase 3, run all persona instances in parallel**
 (single message, multiple Task/Agent calls) — they're independent once §Personas exists, and
-running them serially wastes wall-clock for no benefit.
+running them serially wastes wall-clock for no benefit. **Before launching each instance, write it a
+per-persona brief** (`findings/<slug>-<persona-slug>-brief.md`: that persona's card plus the §Research
+patterns it is grounded in) and have it read only that brief, never the findings file. The Read tool
+returns a whole file, so an evaluator told to skip §Verdicts would still see earlier verdicts; the
+blindness has to come from what the file holds, not from an instruction.
 
 **Single writer for §Verdicts.** `live-evaluator` instances do not write to
 `findings/<slug>-findings.md` themselves — concurrent appends from parallel instances risk

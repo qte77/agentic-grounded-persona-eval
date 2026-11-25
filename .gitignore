@@ -5,6 +5,7 @@ __pycache__/
 config/target*.md
 !config/target.example.md
 findings/*-findings.md
+findings/*-brief.md
 
 # Local checkouts of products under evaluation, if ever cross-referenced during a run (mirrors
 # config/target.md's own "checked out alongside" pattern, and polyfetch-scrape's own vendor/

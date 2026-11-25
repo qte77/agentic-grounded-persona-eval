@@ -11,14 +11,16 @@ parallel — never in series, and never let one persona's evidence leak into ano
 
 ## Precondition — check before starting
 
-Read `findings/<product-slug>-findings.md` §Personas and find your assigned persona card. If
-§Personas doesn't exist yet, **stop and report that Phase 2 must run first.**
+Read the brief the orchestrator wrote for you, `findings/<product-slug>-<persona-slug>-brief.md`. It
+holds your persona card and the §Research patterns that persona is grounded in, and nothing else.
+**Never open `findings/<product-slug>-findings.md`**: it can also hold earlier §Verdicts, which would
+bias yours. If the brief doesn't exist or has no persona card, **stop and report that Phase 2 must
+run first and the orchestrator must write the brief.**
 
 ## What to do
 
 1. Read your persona card in full: voice, grounding, skepticism, what would convince them. Read
-   §Research for the patterns your persona is grounded in — you'll need to tag your verdict against
-   them.
+   the research patterns in your brief — you'll need to tag your verdict against them.
 2. Use [`polyfetch-scrape`](https://github.com/qte77/polyfetch-scrape)'s `render_session()` to
    actually drive a real browser session against the live product (`config/target.md` has the URL).
    Interact as your persona would: read the landing page as they would, fill in any forms with
